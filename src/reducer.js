@@ -1,13 +1,12 @@
-const initialState = {
-  start: 'home page',
-}
-
-const reducer = (state = initialState, action) => {
+const initialStartState = { start: 'home page' };
+export const start = (state = initialStartState, action) => {
   switch (action.type) {
-
-  default:
-    return state
+    default:
+      return state;
   }
-}
+};
 
-export default reducer;
+const initialResultsState = {};
+export const resultsState = (state = initialResultsState) => {
+  return state;
+};
