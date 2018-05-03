@@ -16,7 +16,7 @@ server.use('/assets', express.static('assets'));
 
 server.get('*', async (req, res) => {
   const initialState = { start: 'start from here'};
-  // const resultsState = await findResultsState(Home);
+  const resultsState = await findResultsState(Home);
   const store = configureStore(null, initialState);
   const context = {};
   const appString = renderToString(
